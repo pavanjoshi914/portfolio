@@ -121,7 +121,7 @@ hr{
 
 
 /*button creator css*/
-.BUTTON_YFU {
+/* .BUTTON_YFU {
 
     margin-top:50px;
     background: #11CDD4;
@@ -162,6 +162,40 @@ hr{
     border-radius: 20px;
     text-decoration: none;
 }
+ */
+
+
+/* custom button  */
+.cm-btn{
+    position: relative;
+    width: 12rem;
+    height: 3rem;
+    background-color: #11999E;
+    text-decoration: none;
+    color: white;
+    border: none;
+    box-shadow: .3rem .3rem .3rem rgba(0, 0, 0, 0.527);
+    border-radius: 10%;
+    overflow: hidden;
+    outline: none;
+}
+.cm-btn::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(to right , transparent , #fff ,transparent);
+    top: 0;
+    left: 200px;
+    border-radius: 10%;
+    transition: all .7s ease;
+}
+
+.cm-btn:hover.cm-btn::before{
+    left: -200px;
+}
+
+/* end of  custom button  */
 
 .bottom-container{
 
@@ -171,12 +205,21 @@ hr{
        aur container pura screen end ko touch kiya alag se para ko class deke margin zero karne ki zarurat nai 
     */
 }
-.footer-link{
+a.footer-link{
     margin:30px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all.2s ease;
+}
+a.footer-link:hover{
+    font-size: 1.1rem;
+    letter-spacing: .5rem;
+    transition: all .3s ease;
 }
 .footer-para{
      color:white;
 }
+
 
 
 
